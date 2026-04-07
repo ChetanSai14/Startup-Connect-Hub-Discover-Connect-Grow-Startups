@@ -1,72 +1,87 @@
+# 🚀 Startup Connect Hub – Discover, Connect & Grow Startups
 
-## Project info
+A full-stack platform that enables entrepreneurs and startups to connect, collaborate, and showcase ideas in one place.
 
-**URL**: https://projects/29e34e44-3c3e-4258-9fcb-d4b3c302a6f2
+---
 
-## How can I edit this code?
+## 📁 Project Structure
 
-There are several ways of editing your application.
+/my-app: React frontend (built with Tailwind CSS and modern UI components)
+/backend: Node.js & Express backend (MongoDB for data management and authentication)
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://projects/29e34e44-3c3e-4258-9fcb-d4b3c302a6f2) and start prompting.
+## ⚙️ Quick Start
 
-Changes made via Lovable will be committed automatically to this repo.
+### 1. Prerequisites
 
-**Use your preferred IDE**
+Node.js (v18+)
+MongoDB (Local or Atlas)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### 2. Backend Setup
 
-Follow these steps:
+cd backend
+npm install
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Create a .env file based on .env.example
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+npm start
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+### 3. Frontend Setup
 
-**Edit a file directly in GitHub**
+cd my-app
+npm install
+npm start
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## 🌟 Features
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Startup Networking: Connect with entrepreneurs, developers, and innovators
+Idea Showcase: Post and explore startup ideas and projects
+Collaboration Opportunities: Find teammates and partners for your startup
+User Authentication: Secure login and user account management
+Responsive UI: Clean and modern interface for seamless user experience
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## 🚀 Deployment Guide
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### 1. Frontend (Vercel)
 
-## How can I deploy this project?
+Repo Link: Connect this GitHub repo
+Root Directory: Select my-app
+Framework Preset: Create React App
 
-Simply open [Lovable](https://projects/29e34e44-3c3e-4258-9fcb-d4b3c302a6f2) and click on Share -> Publish.
+Environment Variables:
+REACT_APP_API_URL: Set this to your backend URL (e.g., https://backend-production-xyz.up.railway.app)
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
+### 2. Backend (Railway)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Repo Link: Connect this GitHub repo
+Root Directory: Select backend
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Environment Variables:
+MONGO_URI: Your MongoDB connection string
+JWT_SECRET: A long random string
+CLIENT_URL: Set to your Vercel URL (e.g., https://startup-connect-hub.vercel.app)
+PORT: (Railway sets this automatically, default can be 5000)
+
+---
+
+## 🛠️ Tech Stack
+
+Frontend:
+React.js, Tailwind CSS, JavaScript, HTML, CSS
+
+Backend:
+Node.js, Express.js
+
+Database:
+MongoDB
